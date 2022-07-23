@@ -7,15 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		022E2E32288AEADB00DE9874 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 022E2E2C288AEADB00DE9874 /* Roboto-Thin.ttf */; };
+		022E2E33288AEADB00DE9874 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 022E2E2D288AEADB00DE9874 /* Roboto-Light.ttf */; };
+		022E2E34288AEADB00DE9874 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 022E2E2E288AEADB00DE9874 /* Roboto-Black.ttf */; };
+		022E2E35288AEADB00DE9874 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 022E2E2F288AEADB00DE9874 /* Roboto-Medium.ttf */; };
+		022E2E36288AEADB00DE9874 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 022E2E30288AEADB00DE9874 /* Roboto-Bold.ttf */; };
+		022E2E37288AEADB00DE9874 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 022E2E31288AEADB00DE9874 /* Roboto-Regular.ttf */; };
 		0266D117288AE38B0024E597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0266D116288AE38B0024E597 /* AppDelegate.swift */; };
 		0266D119288AE38B0024E597 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0266D118288AE38B0024E597 /* SceneDelegate.swift */; };
 		0266D11B288AE38B0024E597 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0266D11A288AE38B0024E597 /* ViewController.swift */; };
 		0266D11E288AE38B0024E597 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0266D11C288AE38B0024E597 /* Main.storyboard */; };
 		0266D120288AE38D0024E597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0266D11F288AE38D0024E597 /* Assets.xcassets */; };
 		0266D123288AE38D0024E597 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0266D121288AE38D0024E597 /* LaunchScreen.storyboard */; };
+		02F47725288C1C11001692F0 /* StringModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F47724288C1C11001692F0 /* StringModel.swift */; };
+		D9FDF74C93E4DF3511F65D1C /* Pods_Reverse_Words.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F7F46931BE949534A643ED /* Pods_Reverse_Words.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		022E2E2C288AEADB00DE9874 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		022E2E2D288AEADB00DE9874 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		022E2E2E288AEADB00DE9874 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		022E2E2F288AEADB00DE9874 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		022E2E30288AEADB00DE9874 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		022E2E31288AEADB00DE9874 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		0266D113288AE38B0024E597 /* Reverse Words.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reverse Words.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0266D116288AE38B0024E597 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0266D118288AE38B0024E597 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +38,11 @@
 		0266D11F288AE38D0024E597 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0266D122288AE38D0024E597 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0266D124288AE38D0024E597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02F47720288C06CA001692F0 /* Reverse Words.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Reverse Words.entitlements"; sourceTree = "<group>"; };
+		02F47724288C1C11001692F0 /* StringModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringModel.swift; sourceTree = "<group>"; };
+		02F7F46931BE949534A643ED /* Pods_Reverse_Words.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reverse_Words.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		267081F42FAFE50AD3D4D069 /* Pods-Reverse Words.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reverse Words.release.xcconfig"; path = "Target Support Files/Pods-Reverse Words/Pods-Reverse Words.release.xcconfig"; sourceTree = "<group>"; };
+		CDE52A4DF14D85FBF88316EE /* Pods-Reverse Words.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reverse Words.debug.xcconfig"; path = "Target Support Files/Pods-Reverse Words/Pods-Reverse Words.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9FDF74C93E4DF3511F65D1C /* Pods_Reverse_Words.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +62,8 @@
 			children = (
 				0266D115288AE38B0024E597 /* Reverse Words */,
 				0266D114288AE38B0024E597 /* Products */,
+				C422CB7EA937E5EAE8FB9173 /* Pods */,
+				22B4337AF146F6B3A4A60CC9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +78,72 @@
 		0266D115288AE38B0024E597 /* Reverse Words */ = {
 			isa = PBXGroup;
 			children = (
+				02F47720288C06CA001692F0 /* Reverse Words.entitlements */,
 				0266D116288AE38B0024E597 /* AppDelegate.swift */,
 				0266D118288AE38B0024E597 /* SceneDelegate.swift */,
-				0266D11A288AE38B0024E597 /* ViewController.swift */,
-				0266D11C288AE38B0024E597 /* Main.storyboard */,
+				02F47722288C169A001692F0 /* Models */,
+				02F47721288C1678001692F0 /* Views */,
+				02F47723288C16C9001692F0 /* Controllers */,
 				0266D11F288AE38D0024E597 /* Assets.xcassets */,
-				0266D121288AE38D0024E597 /* LaunchScreen.storyboard */,
 				0266D124288AE38D0024E597 /* Info.plist */,
+				0266D12A288AE9020024E597 /* fonts */,
 			);
 			path = "Reverse Words";
+			sourceTree = "<group>";
+		};
+		0266D12A288AE9020024E597 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				022E2E2E288AEADB00DE9874 /* Roboto-Black.ttf */,
+				022E2E30288AEADB00DE9874 /* Roboto-Bold.ttf */,
+				022E2E2D288AEADB00DE9874 /* Roboto-Light.ttf */,
+				022E2E2F288AEADB00DE9874 /* Roboto-Medium.ttf */,
+				022E2E31288AEADB00DE9874 /* Roboto-Regular.ttf */,
+				022E2E2C288AEADB00DE9874 /* Roboto-Thin.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		02F47721288C1678001692F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0266D11C288AE38B0024E597 /* Main.storyboard */,
+				0266D121288AE38D0024E597 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		02F47722288C169A001692F0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				02F47724288C1C11001692F0 /* StringModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		02F47723288C16C9001692F0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0266D11A288AE38B0024E597 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		22B4337AF146F6B3A4A60CC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02F7F46931BE949534A643ED /* Pods_Reverse_Words.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C422CB7EA937E5EAE8FB9173 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDE52A4DF14D85FBF88316EE /* Pods-Reverse Words.debug.xcconfig */,
+				267081F42FAFE50AD3D4D069 /* Pods-Reverse Words.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0266D127288AE38D0024E597 /* Build configuration list for PBXNativeTarget "Reverse Words" */;
 			buildPhases = (
+				591622EFBE64B2B4D9124A76 /* [CP] Check Pods Manifest.lock */,
 				0266D10F288AE38B0024E597 /* Sources */,
 				0266D110288AE38B0024E597 /* Frameworks */,
 				0266D111288AE38B0024E597 /* Resources */,
+				1F27B09D807613E71BF186D9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,19 +206,68 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				022E2E32288AEADB00DE9874 /* Roboto-Thin.ttf in Resources */,
 				0266D123288AE38D0024E597 /* LaunchScreen.storyboard in Resources */,
+				022E2E33288AEADB00DE9874 /* Roboto-Light.ttf in Resources */,
+				022E2E35288AEADB00DE9874 /* Roboto-Medium.ttf in Resources */,
 				0266D120288AE38D0024E597 /* Assets.xcassets in Resources */,
 				0266D11E288AE38B0024E597 /* Main.storyboard in Resources */,
+				022E2E37288AEADB00DE9874 /* Roboto-Regular.ttf in Resources */,
+				022E2E36288AEADB00DE9874 /* Roboto-Bold.ttf in Resources */,
+				022E2E34288AEADB00DE9874 /* Roboto-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F27B09D807613E71BF186D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Reverse Words/Pods-Reverse Words-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Reverse Words/Pods-Reverse Words-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Reverse Words/Pods-Reverse Words-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		591622EFBE64B2B4D9124A76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Reverse Words-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0266D10F288AE38B0024E597 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02F47725288C1C11001692F0 /* StringModel.swift in Sources */,
 				0266D11B288AE38B0024E597 /* ViewController.swift in Sources */,
 				0266D117288AE38B0024E597 /* AppDelegate.swift in Sources */,
 				0266D119288AE38B0024E597 /* SceneDelegate.swift in Sources */,
@@ -282,9 +412,11 @@
 		};
 		0266D128288AE38D0024E597 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDE52A4DF14D85FBF88316EE /* Pods-Reverse Words.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Reverse Words/Reverse Words.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 82896UQ72B;
@@ -302,6 +434,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dmytroivanchuk1998.Reverse-Words";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -310,9 +443,11 @@
 		};
 		0266D129288AE38D0024E597 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 267081F42FAFE50AD3D4D069 /* Pods-Reverse Words.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Reverse Words/Reverse Words.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 82896UQ72B;
@@ -330,6 +465,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dmytroivanchuk1998.Reverse-Words";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

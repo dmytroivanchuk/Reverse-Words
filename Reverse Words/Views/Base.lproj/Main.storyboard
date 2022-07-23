@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Reverse_Words" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aRH-OE-0ea">
+                                <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                                <items>
+                                    <navigationItem title="Reverse Words" id="HN7-ef-VRH"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reverse Words" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFU-9n-JAl">
+                                <rect key="frame" x="25" y="148" width="340" height="40"/>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This application will reverse your words. Please type text below" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6EP-ja-oxJ">
+                                <rect key="frame" x="40" y="203" width="310" height="40"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Text to reverse" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="awj-rX-6Xk">
+                                <rect key="frame" x="15" y="303" width="360" height="21.666666666666686"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNJ-nL-alP">
+                                <rect key="frame" x="10" y="354.66666666666669" width="370" height="40"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7BS-Hz-x7g">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXw-NZ-06w">
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="24"/>
+                                                <color key="textColor" name="blueColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="rXw-NZ-06w" secondAttribute="bottom" id="8VA-xd-YWq"/>
+                                            <constraint firstAttribute="trailing" secondItem="rXw-NZ-06w" secondAttribute="trailing" id="BDi-VF-W7R"/>
+                                            <constraint firstItem="rXw-NZ-06w" firstAttribute="top" secondItem="7BS-Hz-x7g" secondAttribute="top" id="IPO-DW-UVE"/>
+                                            <constraint firstItem="rXw-NZ-06w" firstAttribute="leading" secondItem="7BS-Hz-x7g" secondAttribute="leading" id="Y3I-0H-Uo9"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="DEQ-L0-Kxa"/>
+                                    <constraint firstItem="7BS-Hz-x7g" firstAttribute="top" secondItem="JWT-dh-fR1" secondAttribute="top" id="Ld2-a6-5zX"/>
+                                    <constraint firstItem="7BS-Hz-x7g" firstAttribute="leading" secondItem="JWT-dh-fR1" secondAttribute="leading" id="OeS-8P-aUF"/>
+                                    <constraint firstItem="7BS-Hz-x7g" firstAttribute="trailing" secondItem="JWT-dh-fR1" secondAttribute="trailing" id="j4Z-Rx-Cdz"/>
+                                    <constraint firstItem="7BS-Hz-x7g" firstAttribute="bottom" secondItem="JWT-dh-fR1" secondAttribute="bottom" id="xHI-rR-b8d"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="JWT-dh-fR1"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="8Lk-f5-v32"/>
+                            </scrollView>
+                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tyt-xZ-LZK">
+                                <rect key="frame" x="20" y="715" width="350" height="60"/>
+                                <color key="backgroundColor" name="blueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="FJ7-ek-LGd"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Reverse">
+                                    <fontDescription key="titleFontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0dV-EX-u15"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Tyt-xZ-LZK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="02q-bJ-NCj"/>
+                            <constraint firstItem="gFU-9n-JAl" firstAttribute="top" secondItem="aRH-OE-0ea" secondAttribute="bottom" constant="60" id="2gj-9V-xJF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tyt-xZ-LZK" secondAttribute="trailing" constant="20" id="4Ks-Nu-gvA"/>
+                            <constraint firstItem="6EP-ja-oxJ" firstAttribute="top" secondItem="gFU-9n-JAl" secondAttribute="bottom" constant="15" id="76K-tV-MXf"/>
+                            <constraint firstItem="aRH-OE-0ea" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9iR-c5-Duj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="awj-rX-6Xk" secondAttribute="trailing" constant="15" id="F0R-9z-HVo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6EP-ja-oxJ" secondAttribute="trailing" constant="40" id="F0R-oh-5wj"/>
+                            <constraint firstItem="aRH-OE-0ea" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="FaO-mG-wY8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gFU-9n-JAl" secondAttribute="trailing" constant="25" id="MdS-5X-GT5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xNJ-nL-alP" secondAttribute="trailing" constant="10" id="Mhm-TD-IPw"/>
+                            <constraint firstItem="awj-rX-6Xk" firstAttribute="top" secondItem="6EP-ja-oxJ" secondAttribute="bottom" constant="60" id="NKH-OW-qLp"/>
+                            <constraint firstItem="6EP-ja-oxJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Njk-31-EnV"/>
+                            <constraint firstItem="xNJ-nL-alP" firstAttribute="top" secondItem="awj-rX-6Xk" secondAttribute="bottom" constant="30" id="Prd-gY-Fg9"/>
+                            <constraint firstItem="aRH-OE-0ea" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VYs-Xu-F1J"/>
+                            <constraint firstItem="awj-rX-6Xk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="XrL-H1-yh7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Tyt-xZ-LZK" secondAttribute="bottom" constant="35" id="eAU-6C-DEx"/>
+                            <constraint firstItem="xNJ-nL-alP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="g3t-EO-vI6"/>
+                            <constraint firstItem="gFU-9n-JAl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="zPl-lW-4yM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="Tyt-xZ-LZK" id="qJJ-fx-yPM"/>
+                        <outlet property="navigationBar" destination="aRH-OE-0ea" id="VOB-Na-S9v"/>
+                        <outlet property="reversedStringLabel" destination="rXw-NZ-06w" id="Bqr-9G-B3h"/>
+                        <outlet property="textField" destination="awj-rX-6Xk" id="jCL-Cx-8Jc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.615384615384613" y="79.620853080568722"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="blueColor">
+            <color red="0.0" green="0.4779999852180481" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
