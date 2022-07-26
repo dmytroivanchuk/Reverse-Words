@@ -23,6 +23,7 @@ class ViewController: UIViewController {
             button.setTitle("Clear", for: .normal)
         } else if sender.currentTitle == "Clear" {
             button.setTitle("Reverse", for: .normal)
+            button.isEnabled = false
             button.alpha = 0.6
             textField.text = ""
             reversedStringLabel.text = ""
@@ -40,6 +41,8 @@ class ViewController: UIViewController {
         
         button.layer.cornerRadius = 14
         button.setTitle("Reverse", for: .normal)
+        button.isEnabled = false
+        button.alpha = 0.6
     }
 }
 
@@ -50,8 +53,10 @@ extension ViewController: UITextFieldDelegate {
     @objc func textFieldDidChange(textField: UITextField) {
         if textField.text == "" {
             button.setTitle("Reverse", for: .normal)
+            button.isEnabled = false
             button.alpha = 0.6
         } else {
+            button.isEnabled = true
             button.alpha = 1
         }
     }

@@ -77,7 +77,7 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="JWT-dh-fR1"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="8Lk-f5-v32"/>
                             </scrollView>
-                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tyt-xZ-LZK">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tyt-xZ-LZK">
                                 <rect key="frame" x="20" y="715" width="350" height="60"/>
                                 <color key="backgroundColor" name="blueColor"/>
                                 <constraints>
