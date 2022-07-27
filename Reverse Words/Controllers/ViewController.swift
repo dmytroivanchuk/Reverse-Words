@@ -38,11 +38,15 @@ class ViewController: UIViewController {
         textField.delegate = self
         textField.layer.addSublayer(createCALayer(color: .systemGray5))
         textField.addTarget(self, action: #selector(textFieldDidChange(textField:)), for: UIControl.Event.editingChanged)
+        textField.accessibilityIdentifier = "textField"
+        
+        reversedStringLabel.accessibilityIdentifier = "reversedStringLabel"
         
         button.layer.cornerRadius = 14
         button.setTitle("Reverse", for: .normal)
         button.isEnabled = false
         button.alpha = 0.6
+        button.accessibilityIdentifier = "button"
     }
 }
 

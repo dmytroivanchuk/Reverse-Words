@@ -9,11 +9,10 @@ import Foundation
 
 struct StringModel {
     func reverseWords(in string: String?) -> String {
+        var result = ""
         if let str = string {
-            let result = str.components(separatedBy: " ").map { $0.reversed() }.joined(separator: " ")
-            return String(result)
-        } else {
-            return ""
+            result = String(str.components(separatedBy: " ").map { $0.reversed() }.joined(separator: " "))
         }
+        return result
     }
 }
