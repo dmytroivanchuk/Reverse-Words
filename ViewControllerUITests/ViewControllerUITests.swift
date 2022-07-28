@@ -25,7 +25,7 @@ class ViewControllerUITests: XCTestCase {
         app.textFields["textField"].typeText(testString)
         XCTAssert(app.buttons["button"].isEnabled)
         
-        app/*@START_MENU_TOKEN@*/.keyboards.buttons["return"]/*[[".keyboards",".buttons[\"return\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[2,1]]@END_MENU_TOKEN@*/.tap()
+        app.keyboards.buttons["return"].tap()
         XCTAssert(app.staticTexts["reversedStringLabel"].label == reversedTestString)
         
         app.buttons["button"].tap()
@@ -54,15 +54,15 @@ class ViewControllerUITests: XCTestCase {
         app.launch()
         
         app.textFields["textField"].tap()
-        app/*@START_MENU_TOKEN@*/.keyboards.buttons["return"]/*[[".keyboards",".buttons[\"return\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[2,1]]@END_MENU_TOKEN@*/.tap()
+        app.keyboards.buttons["return"].tap()
         XCTAssert(!app.buttons["button"].isEnabled)
         
         app.textFields["textField"].typeText(testString)
         XCTAssert(app.buttons["button"].isEnabled)
         
         app.textFields["textField"].press(forDuration: 1.0)
-        app/*@START_MENU_TOKEN@*/.menuItems["Select All"].staticTexts["Select All"]/*[[".menus",".menuItems[\"Select All\"].staticTexts[\"Select All\"]",".staticTexts[\"Select All\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[1]]@END_MENU_TOKEN@*/.tap()
-        app/*@START_MENU_TOKEN@*/.keyboards.keys["delete"]/*[[".keyboards.keys[\"delete\"]",".keys[\"delete\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/.tap()
+        app.menuItems["Select All"].staticTexts["Select All"].tap()
+        app.keyboards.keys["delete"].tap()
         app.staticTexts["This application will reverse your words. Please type text below"].tap()
         XCTAssert(!app.buttons["button"].isEnabled)
     }
