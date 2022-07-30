@@ -32,24 +32,45 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reverse Words" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFU-9n-JAl">
-                                <rect key="frame" x="25" y="148" width="340" height="40"/>
+                                <rect key="frame" x="15" y="136.33333333333334" width="360" height="40"/>
                                 <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This application will reverse your words. Please type text below" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6EP-ja-oxJ">
-                                <rect key="frame" x="40" y="203" width="310" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6EP-ja-oxJ">
+                                <rect key="frame" x="15" y="189" width="360" height="40"/>
+                                <string key="text">This application will reverse your words.
+Please type text below</string>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Text to reverse" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="awj-rX-6Xk">
-                                <rect key="frame" x="15" y="303" width="360" height="21.666666666666686"/>
+                                <rect key="frame" x="15" y="273.66666666666669" width="360" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="Vto-7I-uIl"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2xU-M8-MO3">
+                                <rect key="frame" x="15" y="326.33333333333331" width="360" height="32"/>
+                                <segments>
+                                    <segment title="Default"/>
+                                    <segment title="Custom"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="t5C-sX-qag"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All characters except alphabetic symbols" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EkT-hZ-8S5">
+                                <rect key="frame" x="15" y="384" width="360" height="20"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNJ-nL-alP">
-                                <rect key="frame" x="10" y="354.66666666666669" width="370" height="40"/>
+                                <rect key="frame" x="15" y="432" width="360" height="40"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7BS-Hz-x7g">
                                         <subviews>
@@ -60,19 +81,19 @@
                                             </label>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="rXw-NZ-06w" secondAttribute="bottom" id="8VA-xd-YWq"/>
-                                            <constraint firstAttribute="trailing" secondItem="rXw-NZ-06w" secondAttribute="trailing" id="BDi-VF-W7R"/>
-                                            <constraint firstItem="rXw-NZ-06w" firstAttribute="top" secondItem="7BS-Hz-x7g" secondAttribute="top" id="IPO-DW-UVE"/>
-                                            <constraint firstItem="rXw-NZ-06w" firstAttribute="leading" secondItem="7BS-Hz-x7g" secondAttribute="leading" id="Y3I-0H-Uo9"/>
+                                            <constraint firstAttribute="bottom" secondItem="rXw-NZ-06w" secondAttribute="bottom" id="2hC-BC-Tch"/>
+                                            <constraint firstAttribute="trailing" secondItem="rXw-NZ-06w" secondAttribute="trailing" id="HGY-AZ-s5J"/>
+                                            <constraint firstItem="rXw-NZ-06w" firstAttribute="leading" secondItem="7BS-Hz-x7g" secondAttribute="leading" id="q3e-Ev-rOV"/>
+                                            <constraint firstItem="rXw-NZ-06w" firstAttribute="top" secondItem="7BS-Hz-x7g" secondAttribute="top" id="qdX-hO-X8q"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="DEQ-L0-Kxa"/>
-                                    <constraint firstItem="7BS-Hz-x7g" firstAttribute="top" secondItem="JWT-dh-fR1" secondAttribute="top" id="Ld2-a6-5zX"/>
-                                    <constraint firstItem="7BS-Hz-x7g" firstAttribute="leading" secondItem="JWT-dh-fR1" secondAttribute="leading" id="OeS-8P-aUF"/>
-                                    <constraint firstItem="7BS-Hz-x7g" firstAttribute="trailing" secondItem="JWT-dh-fR1" secondAttribute="trailing" id="j4Z-Rx-Cdz"/>
-                                    <constraint firstItem="7BS-Hz-x7g" firstAttribute="bottom" secondItem="JWT-dh-fR1" secondAttribute="bottom" id="xHI-rR-b8d"/>
+                                    <constraint firstAttribute="trailing" secondItem="7BS-Hz-x7g" secondAttribute="trailing" id="1og-N3-P1T"/>
+                                    <constraint firstItem="7BS-Hz-x7g" firstAttribute="leading" secondItem="xNJ-nL-alP" secondAttribute="leading" id="9IN-lZ-K4n"/>
+                                    <constraint firstAttribute="height" constant="40" id="aID-gg-pLw"/>
+                                    <constraint firstAttribute="bottom" secondItem="7BS-Hz-x7g" secondAttribute="bottom" id="iEI-hd-GJM"/>
+                                    <constraint firstItem="7BS-Hz-x7g" firstAttribute="top" secondItem="xNJ-nL-alP" secondAttribute="top" id="tVh-OS-nLV"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="JWT-dh-fR1"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="8Lk-f5-v32"/>
@@ -84,7 +105,7 @@
                                     <constraint firstAttribute="height" constant="60" id="FJ7-ek-LGd"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Reverse">
+                                <buttonConfiguration key="configuration" style="plain" title="Clear">
                                     <fontDescription key="titleFontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
@@ -96,31 +117,39 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Tyt-xZ-LZK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="02q-bJ-NCj"/>
-                            <constraint firstItem="gFU-9n-JAl" firstAttribute="top" secondItem="aRH-OE-0ea" secondAttribute="bottom" constant="60" id="2gj-9V-xJF"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tyt-xZ-LZK" secondAttribute="trailing" constant="20" id="4Ks-Nu-gvA"/>
-                            <constraint firstItem="6EP-ja-oxJ" firstAttribute="top" secondItem="gFU-9n-JAl" secondAttribute="bottom" constant="15" id="76K-tV-MXf"/>
+                            <constraint firstItem="Tyt-xZ-LZK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="trailing" multiplier="20/390" id="02q-bJ-NCj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tyt-xZ-LZK" secondAttribute="trailing" multiplier="390/370" id="4Ks-Nu-gvA"/>
+                            <constraint firstItem="2xU-M8-MO3" firstAttribute="leading" secondItem="gFU-9n-JAl" secondAttribute="leading" id="4s4-Ul-Ag5"/>
+                            <constraint firstItem="2xU-M8-MO3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="bottom" multiplier="340/844" id="5gn-6A-D8E"/>
                             <constraint firstItem="aRH-OE-0ea" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9iR-c5-Duj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="awj-rX-6Xk" secondAttribute="trailing" constant="15" id="F0R-9z-HVo"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6EP-ja-oxJ" secondAttribute="trailing" constant="40" id="F0R-oh-5wj"/>
+                            <constraint firstItem="gFU-9n-JAl" firstAttribute="trailing" secondItem="EkT-hZ-8S5" secondAttribute="trailing" id="CbR-QX-1gg"/>
+                            <constraint firstItem="6EP-ja-oxJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="bottom" multiplier="197/844" id="Ebm-tI-1B9"/>
                             <constraint firstItem="aRH-OE-0ea" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="FaO-mG-wY8"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gFU-9n-JAl" secondAttribute="trailing" constant="25" id="MdS-5X-GT5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xNJ-nL-alP" secondAttribute="trailing" constant="10" id="Mhm-TD-IPw"/>
-                            <constraint firstItem="awj-rX-6Xk" firstAttribute="top" secondItem="6EP-ja-oxJ" secondAttribute="bottom" constant="60" id="NKH-OW-qLp"/>
-                            <constraint firstItem="6EP-ja-oxJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Njk-31-EnV"/>
-                            <constraint firstItem="xNJ-nL-alP" firstAttribute="top" secondItem="awj-rX-6Xk" secondAttribute="bottom" constant="30" id="Prd-gY-Fg9"/>
+                            <constraint firstItem="EkT-hZ-8S5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="bottom" multiplier="400/844" id="JnY-v7-GYh"/>
+                            <constraint firstItem="awj-rX-6Xk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="bottom" multiplier="285/844" id="NKH-OW-qLp"/>
+                            <constraint firstItem="gFU-9n-JAl" firstAttribute="trailing" secondItem="2xU-M8-MO3" secondAttribute="trailing" id="OIK-yR-7UA"/>
+                            <constraint firstItem="EkT-hZ-8S5" firstAttribute="leading" secondItem="gFU-9n-JAl" secondAttribute="leading" id="Opg-3m-3rq"/>
+                            <constraint firstItem="xNJ-nL-alP" firstAttribute="leading" secondItem="gFU-9n-JAl" secondAttribute="leading" id="S8I-Ls-kMn"/>
+                            <constraint firstItem="gFU-9n-JAl" firstAttribute="trailing" secondItem="xNJ-nL-alP" secondAttribute="trailing" id="U5C-ai-MJY"/>
                             <constraint firstItem="aRH-OE-0ea" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VYs-Xu-F1J"/>
-                            <constraint firstItem="awj-rX-6Xk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="XrL-H1-yh7"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Tyt-xZ-LZK" secondAttribute="bottom" constant="35" id="eAU-6C-DEx"/>
-                            <constraint firstItem="xNJ-nL-alP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="g3t-EO-vI6"/>
-                            <constraint firstItem="gFU-9n-JAl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="zPl-lW-4yM"/>
+                            <constraint firstItem="gFU-9n-JAl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="bottom" multiplier="142/844" id="XBK-0D-geV"/>
+                            <constraint firstItem="awj-rX-6Xk" firstAttribute="leading" secondItem="gFU-9n-JAl" secondAttribute="leading" id="XrL-H1-yh7"/>
+                            <constraint firstItem="xNJ-nL-alP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="bottom" multiplier="450/844" id="aUX-7u-eGg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gFU-9n-JAl" secondAttribute="trailing" multiplier="390/375" id="flZ-7e-Arq"/>
+                            <constraint firstItem="6EP-ja-oxJ" firstAttribute="trailing" secondItem="gFU-9n-JAl" secondAttribute="trailing" id="gSa-eI-P2f"/>
+                            <constraint firstItem="gFU-9n-JAl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="trailing" multiplier="15/390" id="m43-kf-P3c"/>
+                            <constraint firstItem="6EP-ja-oxJ" firstAttribute="leading" secondItem="gFU-9n-JAl" secondAttribute="leading" id="pXa-RH-vFp"/>
+                            <constraint firstItem="awj-rX-6Xk" firstAttribute="trailing" secondItem="gFU-9n-JAl" secondAttribute="trailing" id="rdW-w0-NhK"/>
+                            <constraint firstItem="Tyt-xZ-LZK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="bottom" multiplier="745/844" id="xwL-MJ-6gB"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="button" destination="Tyt-xZ-LZK" id="qJJ-fx-yPM"/>
+                        <outlet property="defaultSegmentLabel" destination="EkT-hZ-8S5" id="TcZ-dW-ChK"/>
+                        <outlet property="mainTextField" destination="awj-rX-6Xk" id="jCL-Cx-8Jc"/>
                         <outlet property="navigationBar" destination="aRH-OE-0ea" id="VOB-Na-S9v"/>
                         <outlet property="reversedStringLabel" destination="rXw-NZ-06w" id="Bqr-9G-B3h"/>
-                        <outlet property="textField" destination="awj-rX-6Xk" id="jCL-Cx-8Jc"/>
+                        <outlet property="segmentedControl" destination="2xU-M8-MO3" id="NEF-ey-4Jo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
